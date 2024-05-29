@@ -17,6 +17,6 @@ request(apiUrl, (error, response, body) => {
 
 		for (const i of results.characters) if (i.includes('/18/')) count++;
 		return count;
-	})
+	});
 	console.log(count)
 });
