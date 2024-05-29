@@ -12,6 +12,7 @@ request(apiUrl, (error, response, body) => {
     return;
   }
 
+
   const movie = JSON.parse(body);
 
   console.log(movie.title);
