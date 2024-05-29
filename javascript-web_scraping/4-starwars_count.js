@@ -11,12 +11,10 @@ request(apiUrl, (error, response, body) => {
   }
 
   const movie = JSON.parse(body).results;
-	
-	let count = 0;
+  let count = 0;
   movie.filter((results) => {
-
-		for (const i of results.characters) if (i.includes('/18/')) count++;
-		return count;
-	})
-	console.log(count)
+    for (const i of results.characters) if (i.includes('/18/')) count++;
+    return count;
+  });
+  console.log(count);
 });
