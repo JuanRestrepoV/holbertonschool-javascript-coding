@@ -6,5 +6,5 @@ const filePath = process.argv[2];
 
 fs.writeFile(filePath, string, 'utf8', (err, data) => {
   if (err) console.error(err);
-  else console.log(string);
+  else return(string);
 });
