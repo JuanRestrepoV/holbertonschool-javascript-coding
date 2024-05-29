@@ -1,7 +1,6 @@
 #!/usr/bin/node
 
 const request = require('request');
-const { Z_ASCII } = require('zlib');
 
 const apiUrl = "https://swapi-api.hbtn.io/api/films/";
 
