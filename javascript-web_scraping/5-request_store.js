@@ -15,8 +15,6 @@ request(apiUrl, (error, response, body) => {
 	fs.writeFile(filePath, body, 'utf8', (err) => {
 		if (err) {
 			console.error('Error writing to file:', err);
-		} else {
-			console.log(`Succesfully saved in ${filePath}`);
 		}
   });
 });
