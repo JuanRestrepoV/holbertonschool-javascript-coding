@@ -12,9 +12,9 @@ request(apiUrl, (error, response, body) => {
     console.error('Error:', error);
     return;
   }
-	fs.writeFile(filePath, body, 'utf8', (err) => {
-		if (err) {
-			console.error('Error writing to file:', err);
-		}
+  fs.writeFile(filePath, body, 'utf8', (err) => {
+    if (err) {
+      console.error('Error writing to file:', err);
+    }
   });
 });
