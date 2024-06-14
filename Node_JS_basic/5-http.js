@@ -21,11 +21,11 @@ const app = createServer((req, res) => {
       const students = {};
       let totalStudents = 0;
 
-      for (let i = 1; i < lines.length; i++) {
+      for (let i = 1; i < lines.length; i += 1) {
         const [name, , , field] = lines[i].split(',');
         if (!students[field]) students[field] = [];
         students[field].push(name);
-        totalStudents++;
+        totalStudents += 1;
       }
 
       const response = [
